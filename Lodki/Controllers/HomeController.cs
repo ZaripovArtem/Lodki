@@ -25,7 +25,7 @@ namespace Lodki.Controllers
 
         public IActionResult Privacy()
         {
-            return View();
+            return View(db.Employees.ToList());
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
